@@ -1,15 +1,4 @@
 # Autoria Web <>
 `<Reposiório para as aulas de Autoria Web>`
 
----
-```html
-<!DOCTYPE html>
-<html> 
-    <head>
-        <title> </title>
-    </head>
-    <body>
-        <h1> </h1>
-        <p> </p>
-    </body>
-</html>
+***Objetivo***: aprender `HTML` e `CSS`
