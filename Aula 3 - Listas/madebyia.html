@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo CSS básico</title>
+  <style>
+    /* Estilo para o corpo da página (afeta todo o texto dentro do body) */
+    body {
+      background-color: #f5f5f5;            /* fundo cinza claro */
+      color: #333;                          /* cor padrão do texto */
+      font-family: Arial, sans-serif;      /* fonte padrão */
+      font-size: 16px;                     /* tamanho padrão */
+      padding: 20px;                       /* um pouco de espaço nas bordas */
+    }
+
+    /* Estilo específico para o h1 (só o título) */
+    h1 {
+      color: #d35400;                      /* título em laranja */
+      font-size: 2rem;                     /* maior que o texto normal */
+      margin: 0 0 15px 0;                  /* espaço abaixo */
+      text-align: center;                  /* alinha o título ao centro */
+    }
+
+    /* Estilo para páginas (parágrafos) */
+    p {
+      line-height: 1.6;                    /* espaço entre linhas */
+      max-width: 600px;                    /* limita a largura do texto */
+      margin: 0 auto;                      /* centraliza o parágrafo */
+    }
+
+    /* Botão simples */
+    .botao {
+      display: inline-block;
+      background-color: #3498db;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+
+    /* Efeito ao passar o mouse */
+    .botao:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Minha Página de Exemplo</h1>
+
+  <p>
+    Este é um texto normal dentro do body. Ele pega a cor padrão, fonte e tamanho definidos em <code>body{}</code>.
+  </p>
+
+  <p>
+    O título acima, o <code>&lt;h1&gt;</code>, é estilizado separadamente em <code>h1{}</code>,
+    então ele pode ter cor, tamanho e alinhamento diferentes do resto do texto.
+  </p>
+
+  <a href="#" class="botao">Clique aqui (exemplo de botão)</a>
+</body>
+</html>

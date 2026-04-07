@@ -1,0 +1,32 @@
+body{
+    /* Utilizado para definir o estilo dos elementos do body */
+
+    background-color: darkkhaki;
+    /* Define a cor de fundo */
+
+    color: rgb(35, 88, 37);
+    /* Define a cor do texto */
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    /* Define a família da fonte do texto */
+
+    font-size: 16px;
+    /* Define o tamanho da fonte do texto */
+
+}
+
+h1{
+    /* Utilizado para definir o estilo dos títulos h1 */
+
+    text-align: center;
+    /* Utilizado para alinhar o texto na página */
+
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+p{
+    font-size: 16px;
+    padding: 20px;
+    /* Adiciona um recuo nas bordas */
+}
