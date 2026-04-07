@@ -9,26 +9,3 @@
   <li>Aula 3 - Listas</li>
 </ul>
 
-```html
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Aula 2</title>
-    </head>
-    <body>
-        <h1>Título 1</h1>
-        <h2>Subtítulo 1</h2>
-        <h3>Texto 1</h3>
-        <h2>Subtítulo 2</h2>
-        <h3>Texto 2</h3>
-
-        <hr>
-        
-        <h1>Título 2</h1>
-        <h2>Subtítulo 3</h2>
-        <h3>Texto 3</h3>
-        <h2>Subtítulo 4</h2>
-        <h3>Texto 4</h3>
-    </body>
-</html>
