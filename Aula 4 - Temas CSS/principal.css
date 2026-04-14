@@ -1,0 +1,27 @@
+body{
+    /* body = representa o seletor, é a marcação que será formatada */
+    background-color: aquamarine;
+    background-color: antiquewhite;
+    background-color: rgba(76, 174, 212, 0.87);
+    /* O último atributo é que ficará! CASCATA... */
+
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: define a família de fonte do texto. Normalmente, apresenta mais de uma opção */
+    /* serifas: pequenos detalhes nas letras da família */
+}
+h1{
+    color: chocolate;
+    /* Define a cor do texto */
+    text-align: center;
+    /* Define o alinhamento do texto */
+}
+h2{
+    background-color: aliceblue;
+    padding-left: 20px;
+}
+li{
+    background-color: aqua;
+    list-style-type: upper-roman;
+    /* este atributo é APENAS para os seletores OL, LI e UL */
+    list-style-position: inside;
+}
