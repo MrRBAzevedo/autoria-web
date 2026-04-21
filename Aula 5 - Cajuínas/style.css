@@ -1,0 +1,35 @@
+body{
+    background-color: rgba(254, 193, 193, 0.822);
+    color: rgb(122, 30, 30);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+p{
+    font-size: 16px;
+    padding-inline: 25px;
+    margin-top: 5px;
+}
+.objetivos li{
+    font-size: 17px;
+    list-style-type: '➜ ';
+    margin: 8px;
+}
+.organizadoras li{
+    font-size: 16px;
+    margin: 8px;
+    list-style-type: upper-roman;
+}
+.integrantes li{
+    font-size: 16px;
+    margin: 6px;
+}
