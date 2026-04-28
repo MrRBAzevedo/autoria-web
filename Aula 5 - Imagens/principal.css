@@ -7,7 +7,7 @@ h1{
     text-align: center;
 }
 li{
-    list-style-image: url(Seta.png);
+    list-style-image: url(Imagens/Seta.png);
     padding-left: 20px;
     /* Linka uma imagem da pasta a um marcador. Usar Ctrl + Space para mostras as opções */
 }
