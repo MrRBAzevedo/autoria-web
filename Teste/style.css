@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E3E6E6;
+}
+.principal{
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    height: 60px;
+}
+.principal input{
+    width: 300px;
+    height: 40px;
+    position: 1110px;
+}
+.secundario{
+    background-color: #232F3E;
+    padding-top: 5px;
+}
+.secundario ol{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-bottom: 0px;
+}
+.secundario li{
+    color: white;
+    margin-right: 20px;
+}
+img{
+    padding-left: 30px;
+}
