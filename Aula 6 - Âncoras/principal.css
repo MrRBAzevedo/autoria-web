@@ -1,0 +1,25 @@
+body{
+    background-color: wheat;
+    color: rgb(104, 31, 4);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem; /* número inteiro + unidade, a unidado pode ser px, em, rem, % */
+}
+li{
+    display: inline-block;
+    background-color: rgb(197, 173, 128);
+    margin: 0 1rem; /* Quando tem 2 valores: o primeiro é o valor do top e bottom; o segundo é o valor esquerda e direita */
+
+    /* o comportamento do li é 'block' (o background fica na linha inteira)
+    o comportamento do a é 'inline' (o background fica apenas na área do texto) */
+}
+a:hover{
+    /* hover: quando o cursor passa em cima */
+    color: blueviolet;
+}
+li a{  /* seletor específico */
+    background-color: rgb(197, 173, 128);
+    color: white;
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
