@@ -9,7 +9,7 @@ header{
     /* display: flex; -> flexibiliza o layout do header (nesse caso), permitindo o melhor posicionamento
     dos elementos nele presente */
 
-    padding: 20px 150px;
+    padding: 20px 100px;
     /* padding: 20px 150px; -> ajusta o espaçamento entre as bordas do header e os elementos dele.
     O primeiro valor indica o espaçamento entre as bordas inferior e superior, sendo bastante útil
     para definir o tamanho do header. Já o segundo valor, indica o espaçamento entre as bordas 
@@ -24,6 +24,7 @@ header{
     align-items: center;
     /* aling-items -> muito semelhante ao justify-content, mas atua sobre o eixo y
     Nesse caso, é utilizado para centralizar o conteúdo do header */
+
 }
 h1{
     margin: 0;
@@ -55,4 +56,30 @@ header a{
 }
 header a:hover{
     color: rgb(207, 100, 100);
+}
+main{
+    background-color: rgb(117, 138, 108);
+    padding: 10px 0px;
+    margin: auto;
+    max-width: 1200px;
+    /* Impede de o main ficar muito grande em telas grandes */
+}
+section h2{
+    text-align: center;
+    font-size: 35px;
+}
+.imagem1{
+    width: 100%;
+    max-width: 300px;
+    /* Classe criada para ajustar o tamanho da imagem 1
+    max-width: define o tamanho máximo da imagem, mas ela pode assumir menores; */
+    border-radius: 12px;
+}
+.escola{
+    display: flex;
+    gap: 30px;
+    padding: 0 30px;
+}
+.escola p{
+    font-size: 20px;
 }
