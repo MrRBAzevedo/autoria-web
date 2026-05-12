@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(90, 105, 84);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    /* Por padrão, as margens do body não são nulas. Então, é importante zerá-las para evitar erros de formatação */
+}
+header{
+    display: flex;
+    /* display: flex; -> flexibiliza o layout do header (nesse caso), permitindo o melhor posicionamento
+    dos elementos nele presente */
+
+    padding: 20px 150px;
+    /* padding: 20px 150px; -> ajusta o espaçamento entre as bordas do header e os elementos dele.
+    O primeiro valor indica o espaçamento entre as bordas inferior e superior, sendo bastante útil
+    para definir o tamanho do header. Já o segundo valor, indica o espaçamento entre as bordas 
+    esquerda e direita, sendo bem útil para criar uma "margem" */
+
+    background-color: rgb(5, 71, 97);
+
+    justify-content: space-between;
+    /* justify-content -> é utilizado junto ao display: flex para ajustar a disposição dos elementos sobre o eixo x
+    Nesse caso, com o comando space-between, o primeiro elemento é posto na margem esquerda, enquanto o outro, na direita */
+
+    align-items: center;
+    /* aling-items -> muito semelhante ao justify-content, mas atua sobre o eixo y
+    Nesse caso, é utilizado para centralizar o conteúdo do header */
+}
+h1{
+    margin: 0;
+    /* Assim como no body, é importante zerar as margens do H1 para evitar erros de formatação */
+}
+ul{
+    display: flex;
+    /* Para a lista, é utilizado para podermos ajustar a disposição de seus elementos.
+    Nesse caso, desejamos alinhar os itens horizontalmente para criar um menu de navegação */
+
+    gap: 22px;
+    /* gap -> cria um espaçamento entre os elementos da lista */
+
+    list-style: none;
+    /* No caso, utiliza-se para eliminar as bolinhas características das listas */
+}
+li{
+    font-size: 21px;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    /* Elimina as formatações do texto. No caso, utiliza-se para eliminar o sublinhado */
+
+    transition: color 0.5s ease;
+    /* transition -> utilizada para adicionar um efeito de transição para as transformações do texto.
+    Nesse caso, a transição é aplicada para uma mudança de cor, indicado pela palavra color. Além disso,
+    podemos ver o tempo, de 0.5s, e o efeito ease, que adiciona uma aceleração e dasaceleração à animação */
+}
+header a:hover{
+    color: rgb(207, 100, 100);
+}
