@@ -1,5 +1,7 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(Imagens/plano_de_fundo.png);
+    background-size: cover;
     color: #F9FAFB;
     background-color: #F9FAFB;
     margin: 0;
@@ -41,19 +43,34 @@ section{
 section h2{
     color: #D4AF37;
     text-align: center;
-    font-size: 26px;
+    font-size: 30px;
 }
 section p{
     font-size: 23px;
     line-height: 1.2;
 }
+section a{
+    color: white;
+    transition: color 0.5s ease;
+}
+section a:hover{
+    color: #D4AF37;
+}
 .conteudo{
     display: flex;
     align-items: center;
+    padding: 15px 0;
     gap: 30px;
 }
-.imagem_pag1{
+.imagem_sistema{
     width: 100%;
     max-width: 370px;
+    height: auto;
+    border-radius: 15px;
+}
+.imagem_equipamento{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     border-radius: 15px;
 }
