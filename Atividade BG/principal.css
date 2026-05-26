@@ -6,6 +6,8 @@ body{
     background-color: #F9FAFB;
     margin: 0;
 }
+
+
 header{
     background-color: #1F2937;
     display: flex;
@@ -29,6 +31,8 @@ nav li{
     list-style-type: none;
     font-size: 25px;
 }
+
+
 main{
     background-color: #374151;
     max-width: 1200px;
@@ -62,6 +66,39 @@ section a:hover{
     padding: 15px 0;
     gap: 30px;
 }
+.conteudo img{
+    width: 400px;
+    border-radius: 15px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 0;
+}
+.card{
+    background-color: #1F2937;
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 15px;
+    transition: 0.5s ease;
+}
+.card:hover{
+    transform: translateY(-8px);
+}
+.card img{
+    width: 100%;
+    border-radius: 15px;
+}
+.card h3{
+    color: #F9FAFB;
+    font-size: 25px;
+    text-align: center;
+}
+.card p{
+    font-size: 22px;
+}
 .imagem_sistema{
     width: 100%;
     max-width: 370px;
@@ -80,6 +117,8 @@ section a:hover{
     height: auto;
     border-radius: 15px;
 }
+
+
 footer{
     display: flex;
     justify-content: space-between;
