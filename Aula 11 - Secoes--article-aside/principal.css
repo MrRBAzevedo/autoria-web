@@ -4,9 +4,21 @@ body{
     margin: 0;
 }
 
+/* 
+header nav li{ espaço, representa especificidade
+    display: inline-block;
+}
+
+main{
+    padding: 2rem;
+    max-width: 70rem; largura máxima - responsividade!
+    margin: 0 auto;
+
+
+*/
 header{
     background-color: rgb(34, 73, 146);
-    padding: 20px 200px;
+    padding: 1.25rem 12.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,10 +29,18 @@ header a{
     transition: color 0.5s ease;
 }
 header a:hover{
-    color: rgb(155, 155, 155);
+    color: rgb(136, 136, 136);
 }
 header ol{
+    font-size: 1.25rem;
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
+
+main{
+    padding: 1rem;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
