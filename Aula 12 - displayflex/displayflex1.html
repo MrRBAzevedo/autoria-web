@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="principal.css"> -->
+        <title>DISPLAY FLEX</title>
+        <style>
+            body{
+                display: flex;
+                /* DIAGRAMAÇÃO */
+                /*
+                - para usar o display flex é necessário aplicar no container!!
+                - ao aplicar o display flex no container, todas as marcações ficarão 
+                (por padrão) uma ao lado da outra
+                - similar ao display: 'inline-block', as marcações ficarão uma ao lado
+                da outra, só que no 'display: flex' teremos MUITO MAIS configurações... 
+                
+                https://flexbox.help/
+                 */
+
+                flex-wrap: wrap;
+            }
+            div{
+                border: 1px solid black;
+                width: 20rem;
+                margin: 2rem;
+                padding: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div><p>1</p></div>
+        <div><p>2</p></div>
+        <div><p>3</p></div>
+        <div><p>4</p></div>
+        <div><p>5</p></div>
+        
+    </body>
+</html>
