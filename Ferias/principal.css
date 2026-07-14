@@ -1,0 +1,74 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    margin: 0;
+    color: black;
+}
+
+header{
+    background-image: url(imagens/bg.png);
+    background-size: cover;
+    text-align: center;
+    padding: 0.1rem 0;
+}
+header h1{
+    font-size: 2.5rem;
+    padding: 3rem 0;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s ease;
+}
+header a:hover{
+    color: rgb(253, 246, 181);
+}
+header ol{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    padding: 1rem;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+main{
+    max-width: 75rem;
+    margin: auto;
+}
+main section{
+    text-align: center;
+    padding: 2rem;
+}
+#cards{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+#cards div{
+    background-image: url(imagens/bg-boxes.jpg);
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+footer{
+    background-image: url(imagens/bg.png);
+    background-size: cover;
+    padding: 0.4rem 4rem;
+}
+footer ul{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    list-style-type: none;
+}
+footer nav img{
+    transition: all 0.5s ease;
+}
+footer nav img:hover{
+    transform: scale(1.2);
+}
