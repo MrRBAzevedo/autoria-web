@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: white;
@@ -32,11 +35,6 @@ header ol{
     background-color: rgba(0, 0, 0, 0.322);
 }
 
-
-
-
-
-
 main{
     max-width: 75rem;
     margin: auto;
@@ -52,6 +50,10 @@ article{
 article h2{
     padding: 2rem;
     font-size: 2rem;
+}
+article img{
+    border-radius: 1rem;
+    max-width: 100%;
 }
 .blocos{
     color: white;
@@ -87,14 +89,10 @@ article h2{
     width: 17rem;
     border-radius: 1rem;
 }
-#horarios{
-    border-radius: 1rem;
-    max-width: 100%;
-}
 #disciplinas div{
     background-image: none;
     background-color: #675F53;
-    width: 16rem;
+    width: 14rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -103,7 +101,6 @@ article h2{
 #disciplinas img{
     width: 10rem;
 }
-
 
 footer{
     background-image: url(imagens/bg.png);
