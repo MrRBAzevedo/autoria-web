@@ -1,0 +1,27 @@
+table{
+    background-color: aquamarine;
+    border-collapse: collapse;
+    /* 
+    border-collapse: collapse;
+    atributo específico para table
+    tirar os espaçamentos entre as células
+
+    */
+}
+table tr{
+    border-bottom: 1px solid black;
+}
+table tr:nth-child(odd){
+    /* 
+    nth-child - significa enésimo filho
+    odd - ímpares
+    even - pares
+    */
+    background-color: rgb(232, 232, 232);
+}
+table td{
+    padding: 0.5rem 1rem;
+}
+table td:nth-child(2){
+    font-weight: bold;
+}
