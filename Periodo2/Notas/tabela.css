@@ -1,0 +1,15 @@
+table{
+    border-collapse: collapse;
+}
+table tr{
+    border-bottom: 1px solid black;
+}
+table th{
+    padding: 0.1rem 0.5rem;
+}
+table td{
+    padding: 0.1rem 0.5rem;
+}
+table tr:hover{
+    background-color: aquamarine;
+}
