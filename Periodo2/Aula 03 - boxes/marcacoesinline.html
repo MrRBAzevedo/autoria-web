@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marcacoes-inline</title>
+    <style>
+        a{
+            background-color: aqua;
+            width: 5rem;
+            padding: 2rem;
+            /* 
+            como o âncora é uma marcação inline, a largura "não funciona" e o padding funciona
+            com erro, isto é, o espaçamento fica sobre os outros elementos
+            */
+
+            display: block;
+            /* o 'display: block' deixará os âncoras um abaixo do outro */
+            display: inline-block;
+            /* o 'display: inline-block' deixará um ao lado do outro, mas permitirá o width e padding */
+
+            border: 1px solid black;
+            /* border: espessura estilo cor
+            espessura é um número com unidade
+            estilo: solid, dashed, dotted, inset, outset
+            cor: #ff0000, rgb(), rgba()...
+            */
+            margin: 0;
+            /* 
+            margin e padding
+            4 valores: top, right, bottom, left - margin: 1px 1px 1px 1px;
+            3 valores: top, right/left, bottom - margin: 1px 1px 1px;
+            2 valores: top/bottom, left/right;
+            1 valor: todos os lados.
+            */
+            height: 10rem;
+            /* 
+            atributo de altura é pouco utilizado, define uma altura para a marcação.
+            tem o max-height e min-height
+            */
+        }
+        div{
+            background-color: aquamarine;
+            width: 70rem;
+            margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    O ideal é colocar uma lista. Código sem valor semântico!
+    -->
+    <div>
+    teste
+    <a href="">texto</a>
+    <a href="">texto</a>
+    <a href="">texto</a>
+    <a href="">texto</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in porro tempora temporibus. Voluptates debitis enim consequatur fuga ut, perspiciatis porro ducimus quisquam adipisci deleniti, laborum tempora sapiente quas cumque.</p>
+    <p>Fugit sequi suscipit ipsam nulla necessitatibus praesentium est accusantium. Officia, aut neque vero, architecto pariatur ipsam rem minus magni obcaecati eaque autem! Exercitationem, reprehenderit! Tempore voluptate fugiat odit aliquam porro!</p>
+    <p>Eaque recusandae excepturi cumque aut natus aliquam dolor vitae nihil explicabo fugiat, doloribus impedit quibusdam repellendus praesentium possimus ad esse aperiam architecto omnis adipisci alias quas! Doloremque tenetur temporibus dignissimos!</p>
+    <p>Modi sequi illum sint accusamus assumenda ea quis eos, tenetur error inventore ducimus veniam vel! Saepe debitis dolores minus? Quidem nemo ipsam minima dicta ea eum eveniet ducimus doloremque distinctio.</p>
+    </div>
+</body>
+</html>
