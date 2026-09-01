@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            form{
+                width: 20rem;
+                margin: 2rem auto;
+                padding: 2rem;
+                background-color: rgb(85, 221, 176);
+            }
+            label{
+                margin-bottom: 1rem;
+                display: inline-block;
+                width: 7rem;
+            }
+            input{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                border: 1px dashed black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>FORMULÁRIO DE CADASTRO</h1>
+        <form action="resposta.html" method="get">
+            <!-- 
+            - a marcação de form envolve os campos
+            - pode ter vários formulários em uma só página
+            - o atributo action envia os dados para um arquivo
+            -->
+
+            <label for="nome">Nome: </label>
+            <!-- 
+            a marcação de label é responsável por criar um rótulo na marcação,
+            sendo importante para a acessibilidade
+            visualmente NÃO muda NADA!!!
+            - o atributo de 'for' deve ter o mesmo valor do id do componente
+            input equivalente (ele serve como um direcionador para o input)
+            -->
+            <input type="text" id="nome"> <br>
+            <label for="email">E-mail: </label>
+            <!-- 
+            posso colocar o input dentro da marcação de label
+            ou colocar o input "distante" da marcação label, para este caso,
+            colocar o atributo for na label
+            -->
+            <input type="email" id="email" placeholder="Digite seu e-mail"> <br>
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha"> <br>
+            <!-- 
+            o componente do tipo 'password' oculta a senha enquanto ela está sendo digitada
+            -->
+
+            <input type="submit" value="ENVIAR">
+
+        </form>
+    </body>
+</html>

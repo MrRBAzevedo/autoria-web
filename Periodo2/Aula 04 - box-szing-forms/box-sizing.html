@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>box-sizing - forms</title>
+        <style>
+            div{
+                border: 1px dashed rgb(33, 116, 167);
+                width: 60rem;
+                margin: 5rem auto;
+                min-height: 30rem;
+                padding: 5rem;
+                box-sizing: border-box;
+                /* 
+                o atributo box-sizing é responsável por manter a largura do elemento 
+                igual a largura definida, quando o padding é delimitado, visto que ao
+                alterar o padding a largura é alterada, geralmente
+
+                quando se define o padding e width, a largura da marcação é alterada,
+                isto é, se eu definir 20rem de largura e 4rem de padding, a largura
+                final fica 28rem (4rem 20rem 4rem), ao definir o box-sizing, a largura
+                se mantém 20rem e o padding é definido para dentro da marcação.
+                */
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit illo possimus rerum et harum quibusdam voluptate voluptatibus molestiae eaque accusantium quisquam, dolorem dolorum natus nesciunt perferendis, provident nostrum maiores ut.</p>
+        </div>
+    </body>
+</html>
