@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários</title>
+    </head>
+    <body>
+        <form action="resposta.html">
+            <!-- A marcação <form> é utilizada para a construção de formulários,
+            que são mecanismos responsáveis por receber dados do usuário que
+            interage com a página. 
+                 Podemos ter diversos formulários dentro de uma página, que recebem
+            os dados fornecidos pelo usuários e os transformam em um arquivo. -->
+
+            <label for="nome">Nome: </label>
+            <!-- A marcação <label>, do inglês rótulo, é utilizada para nomear e direcionar
+            o usuário a um campo de entrada de dado. Por isso, é considerada um recurso
+            de acessibilidade. 
+                 Nela, utilizamos o atributo for para indicar, a partir do ID, o campo
+            de entrada referente a ela. Caso não se queira utilizar esse atributo, pode-se
+            pôr a marcação de entrada de dados dentro da marcação label. -->
+
+            <input type="text" id="nome">
+            <!-- A marcação <input> representa um campo de entrada de dados. Ela possui
+            diversos tipos diferentes, que podem ser escolhidos a partir do atributo type.
+            Alguns desses tipos são: text, email, password, submit, search e radio. -->
+
+            <textarea id="" placeholder=""></textarea>
+            <!-- A marcação <textarea> é bem semelhante ao <input>, mas, por sua vez, é
+            utilizada para receber textos maiores, possuindo, também, menos tipos em relação
+            ao primeiro. Dentro dessa marcação, podemos por seu value, um texto que aparecerá
+            digitado por padrão no campo. -->
+
+            <select id="">
+                <!-- O <select> é uma marcação de entrada de dados um pouco diferente das 
+                demais. Dentro dela, são postas diferentes opções, que aparecerção em uma
+                caixa para que o usuário escolha. Essas opções são representadas no HTML com
+                a marcação <option> -->
+                
+                <option value="a">Opção A</option>
+                <option value="b">Opção B</option>
+                <option value="c">Opção C</option>
+                <option value="d">Opção D</option>
+            </select>
+        </form>
+    </body>
+</html>

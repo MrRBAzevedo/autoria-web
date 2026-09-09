@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boxes</title>
+
+        <style>
+            h1{
+                text-align: center;
+                background-color: rgb(172, 255, 255);
+                width: 30rem;
+                height: 5rem;
+                margin: 2rem auto;
+            }
+            b{
+                font-size: 2rem;
+                background-color: aquamarine;
+                height: 20rem;
+            }
+            div{
+                display: inline-block;
+                margin: 2rem auto; 
+                padding: 2rem;
+                background-color: aquamarine;
+                box-sizing: border-box;
+
+                /* Quando definimos a largura de um elemento com o atributo widht,
+                do CSS, o valor será aplicado apenas ao conteúdo da marcação.
+                Logo, se for também definido um padding, o elemento terá um tamanho
+                total maior que o valor do widht. Se quisermos evitar isso, podemos
+                usar o atributo box-sizing: border-box;, que fará o widht ser aplicado
+                ao conteúdo e ao padding simultaneamente. */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- As boxes do html representam o espaço ocupado pelos elementos ao
+        longo da página. Existem ao todo três diferentes boxes, que pode ser
+        formatadas com o atributo display, sendo elas: block, inline e inline-block -->
+
+        <h1>Marcação do tipo block</h1>
+        <!-- Em marcações com a formatação/boxe do tipo block, o elemento ocupa toda
+        uma linha da página, fazendo com que os outros ocupem as linhas abaixo. Essa
+        boxe aceita os atributos widht e height de formatação -->
+
+        <b>Marcação do tipo inline</b>
+        <!-- Em marcações com a formatação inline, o elemento ocupa apenas o espaço
+        de seu conteúdo. Dessa forma, uma só linha pode comportar diversos elementos
+        com essa box. Entretanto, não é possível modificar a sua altura ou largura,
+        pois é o próprio conteúdo que as irá determinar. -->
+
+        <div>Olá, mundo!</div>
+        <!-- A formatação do tipo inline-block mistura as características dessas duas,
+        permitindo que sejam postos diversos elementos em uma única linha e que sejam
+        definidas sua altura e largura -->
+
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atributos de formulários</title>
+    </head>
+    <body>
+        <!-- Os formulários e suas marcações possuem diversos atributos, que
+        permitem alterar alguns de seus parâmetros e, assim, adequá-los para
+        o fim desejado.  -->
+
+
+
+        <form action="resposta.html">
+            <!-- O atributo action da marcação form é utilizado para indicar a
+            página para a qual o usuários será direcionado após a submissão do 
+            formulário. -->
+
+            <input type="search" placeholder="Pesquise aqui">
+            <!-- O atributo placeholder é utilizado para exibir uma mensagem nos
+            campos de texto que ajuda a direcionar o usuário. Quando este começa
+            a escrever, a mensagem desaparece. Esse atributo também pode ser utilizado
+            com a marcação textarea. -->
+
+            <input type="text" value="Seu nome">
+            <!-- O atributo value também exibe uma mensagem no campo de texto, mas esta
+            fica disponível para o usuário e não desaparece ao começar a digitar. -->
+
+            <textarea name="" id="">No textarea, o value não é um atributo, mas corresponde ao texto que fica dentro da marcação</textarea>
+
+            <input type="text" disabled required>
+            <!-- O atributo disabled desativa o campo de texto e impede que o usuário
+            digite nele.
+                 Já o atributo required, exige que aquele campo seja preenchido antes
+            da submissão do formulário. -->
+
+            <label><input type="radio" name="grupo" value="a"> Opção A</label>
+            <label><input type="radio" name="grupo" value="b" checked> Opção B</label>
+            <label><input type="radio" name="grupo" value="c"> Opção C</label>
+            <label><input type="radio" name="grupo" value="d"> Opção D</label>
+            <!-- Quando utilizamos o input do tipo radio, precisamos definir
+            um valor com o atributo name, que servirá para agrupar todas as opções
+            de um mesmo grupo, permitindo que apenas uma seja marcada. 
+                 Podemos utilizar com esse tipo de input o atributo checked, que 
+            fará com que uma alternatica seja marcada por padrão -->
+
+            <input type="submit" value="ENVIAR">
+
+            <select>
+                <option value="A">A</option>
+                <option value="B" selected>B</option>
+                <option value="C">C</option>
+
+                <!-- O atributo selected, utilizado em uma das marcações option, tem
+                função semelhante ao checked, fazendo com que uma das opções já venha
+                selecionada por padrão -->
+            </select>
+        </form>
+    </body>
+</html>
