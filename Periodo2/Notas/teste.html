@@ -3,9 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Teste</title>
+        <title>Entregas</title>
+        <style>
+            label{
+                display: inline-block;
+                margin-left: 2rem;
+            }
+        </style>
     </head>
     <body>
-        
+        <form action="">
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <label for="tipo">Tipo: </label>
+                <select id="tipo">
+                    <option value="rua">Rua</option>
+                    <option value="avenida">Avenida</option>
+                    <option value="travessa">Travessa</option>
+                </select>
+
+                <label for="logradouro">Logradouro: </label>
+                <input type="text" id="logradouro" placeholder="Digite seu logradouro">
+
+                <label for="numero">Número: </label>
+                <input type="number" id="numero">
+
+                <label for="complemento">Complemento: </label>
+                <input type="text" id="Complemento" placeholder="Complemento">
+            </fieldset>
+        </form>
     </body>
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários - pt.3 e JavaScript</title>
+    </head>
+    <body>
+        <form action="forms.html">
+            <fieldset>
+                <!-- A marcação de 'fieldset' é utiliazada para agrupar elementos
+                semelhantes dentro de um formulário, funcionando como uma 'section'
+                exclusiva para este. -->
+
+                <legend>
+                    <!-- A marcação de 'legend' geralmente acompanha à de 'fieldset',
+                    pois tem a função de lhe definir um título, um nome. -->
+
+                    Fieldset 1
+                </legend>
+
+                <label for="datalist">Datalist</label>
+                <input type="text" id="datalist" list="lista">
+                <datalist id="lista">
+                    <option value="Opção 1"></option>
+                    <option value="Opção 2"></option>
+                    <option value="Opção 3"></option>
+                    <option value="Opção 4"></option>
+                    <option value="Opção 5"></option>
+                    <option value="Opção 6"></option>
+                </datalist>
+                <!-- O atributo de 'datalist' do input proporciona uma lista de possíveis
+                elementos a serem escolhidos, semelhante ao 'select'. -->
+            </fieldset> <br>
+            <fieldset>
+                <legend>Fildset 2</legend>
+
+                <label><input type="checkbox" name="grupo" id="opcao1" value="opcao1"> Opção 1</label> <br>
+                <label><input type="checkbox" name="grupo" id="opcao2" value="opcao2"> Opção 2</label> <br>
+                <label><input type="checkbox" name="grupo" id="opcao3" value="opcao3"> Opção 3</label> <br>
+                <label><input type="checkbox" name="grupo" id="opcao4" value="opcao4"> Opção 4</label> 
+                <!-- O 'input' do tipo checkbox é bem semelhante ao do tipo 'radio', mas permite
+                que sejam marcadas múltiplas opções -->
+            </fieldset>
+            <fieldset>
+                <legend>Fieldset 3</legend>
+
+                <label for="diamesano">Data: </label>
+                <input type="date" id="diamesano"> <br>
+                <!-- O input de tipo date é utilizada para datas -->
+
+                <label for="arquivo">Anexar arquivo: </label>
+                <input type="file" id="arquivo">
+                <!-- O input de tipo file é utilizado para anexação de arquivos.
+                Restrições como tamanho e tipo de arquivo são feitas com JavaScript. -->
+            </fieldset>
+            <input type="submit" value="ENVIAR">
+        </form>
+    </body>
+</html>
