@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+header {
+    background-image: linear-gradient(to right, #a12ffd, #1db5fd);
+    height: 10rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header #titulo {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2;
+}
+header #titulo h1{
+    margin: 0;
+}
+header #titulo h2{
+    margin: 0;
+    font-weight: 100;
+}
+header nav ol {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+header nav li a {    
+    background-color: rgba(255, 255, 255, 0.295);
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 1rem 0;
+    width: 8rem;
+    text-align: center;
+}
+
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    gap: 1rem;
+    color: white;
+}
+main section {
+    background-color: #0A1E40;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+main #esportes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+main #buscar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10rem;
+}
+main section div {
+    background-color: rgba(255, 255, 255, 0.295);
+    padding: 3rem 0;
+    width: 10rem;
+    text-align: center;
+}
+main section div h2 {
+    font-weight: 100;
+}
+main section input {
+    background-color: rgba(255, 255, 255, 0.299);
+    border: 0;
+    height: 2rem;
+}
+#calendario {
+    max-width: 10rem;
+    margin: 0;
+}
