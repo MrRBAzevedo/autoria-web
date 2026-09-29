@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * { /* É necessário zerar esses valores para a visualização ficar colada
+                com a margem */
+                margin: 0;
+                padding: 0;
+            }
+            #esmaecer {
+                position: fixed;
+                /* POSITION permite colocar uma elemento/componente sobrepondo outros */
+                /* O valor fixed permite que o elemento sobreponha os outros e fique
+                fixo mesmo com a rolagem da barra */
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #modal {
+                background-color: white;
+                padding: 2rem;
+                border-radius: 1rem;
+                box-shadow: 0.5rem 0.5rem 1rem black;
+                /* O box-shadow pode ser utilizado para adicionar sombras a elementos.
+                O dois primeiros parâmetros servem para deslocar a sombra em relação ao elemento.
+                O terceiro para desfocar a sombra, um efeito chamado blur.
+                Por fim, o quarto determina a cor da sombra */
+                width: 20rem;
+                height: 20rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .botao {
+                background-color: rgb(120, 155, 231);
+                width: 6rem;
+                height: 2rem;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0.1rem 0.1rem 0.5rem black;
+                transition: all 0.3s ease;
+            }
+            .botao:hover {
+                background-color: rgb(86, 131, 226);
+                transform: translate(0.10rem, 0.10rem);
+            }
+        </style>
+    </head>
+    <body>
+       <div id="esmaecer">
+            <div id="modal">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolore fugiat alias cum dicta aperiam tempore minus enim, voluptatem quo. Eveniet iusto sed provident? Officiis dolore quaerat fuga. Quae, ex.</p>
+                <button id="fechar" class="botao">Clique-me</button>
+            </div>
+       </div>
+       
+       <button id="abrir" class="botao">Abrir</button>
+
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto sunt optio placeat, fugit deserunt, sit reiciendis autem id reprehenderit nihil cupiditate! Numquam illum possimus veniam provident aperiam iure autem placeat.</p>
+       <p>Molestias veritatis ipsam sunt quaerat, ex dignissimos? Voluptate saepe excepturi, deleniti aperiam itaque unde reiciendis eaque explicabo perferendis voluptas non, dignissimos officiis dolores facere ut, asperiores quidem? Adipisci, eaque amet.</p>
+       <p>Accusamus unde doloremque molestias aliquid iste quisquam non, numquam itaque dolore voluptatum nesciunt rem id ad? Sapiente iste minima, natus repellendus ad cumque nihil expedita tenetur tempore quia molestias odit?</p>
+       <p>Itaque cum culpa at ad a ullam rerum alias perspiciatis consequatur fugiat reiciendis delectus suscipit, enim modi inventore cupiditate earum mollitia. Expedita amet sequi saepe provident delectus magnam ratione quisquam.</p>
+       <p>Distinctio itaque molestiae aliquid optio nam, ratione deleniti. Adipisci aut possimus eligendi praesentium voluptatibus cumque sint, sunt nesciunt? Harum sed deserunt rem vel, explicabo debitis obcaecati cumque veritatis in soluta!</p>
+       <p>Asperiores, sit ducimus ipsa deleniti qui laborum tempore quam perspiciatis nisi illo provident doloremque, necessitatibus ab, minima eos explicabo possimus aliquam sint inventore quasi. Facilis itaque culpa sit accusantium adipisci.</p>
+       <p>Itaque laboriosam doloribus magnam mollitia. Id, voluptates. Accusantium aliquid vitae saepe odit nihil provident earum blanditiis veritatis quod modi totam perspiciatis eum ea mollitia voluptatum temporibus possimus, praesentium amet corrupti.</p>
+       <p>Incidunt corporis cum obcaecati tempora aspernatur odio assumenda, ad accusamus saepe iure magni mollitia exercitationem voluptatibus placeat non delectus officia asperiores! Aliquam architecto accusamus neque vel perspiciatis! Eum, reprehenderit assumenda!</p>
+       <p>Sequi facilis omnis atque est voluptatem esse tenetur dolorem quia numquam iusto vel quos cumque illo nisi repellat tempore nostrum fuga eius repudiandae corrupti, dolor, inventore harum consectetur voluptatibus? Autem!</p>
+       <p>Nostrum maiores fuga ducimus ratione. Optio mollitia, quibusdam, deleniti, totam cum cumque labore laudantium saepe nisi delectus fuga iste. Aut enim tempore hic veritatis ipsum totam mollitia commodi corporis deleniti!</p>
+       <p>Odio omnis, voluptate placeat velit incidunt harum error veritatis nulla illo nam repellat tempore labore voluptas magnam molestias explicabo quam, exercitationem sit qui quasi? Alias assumenda eos veniam. Maxime, repudiandae?</p>
+       <p>Commodi nihil inventore beatae totam quibusdam nemo, distinctio quae asperiores quas dolor suscipit deserunt, quidem saepe ipsa incidunt rerum dolore impedit cupiditate nobis est hic sunt possimus qui nisi. Mollitia.</p>
+       <p>Facilis, in tenetur saepe eius quod est vero. Provident eligendi similique optio consectetur deleniti, doloremque atque voluptatem recusandae nihil ex saepe in unde ducimus quaerat sit? Nesciunt officia repellat distinctio.</p>
+       <p>Dignissimos quam qui iure repellat rem aliquam quo ea eos reprehenderit voluptate! Ipsa, officia. Possimus dolor fugiat molestias, sequi deleniti commodi eos impedit ipsa ex saepe quia distinctio modi totam.</p>
+       <p>Esse tenetur voluptatibus neque veritatis odit, beatae eligendi voluptate veniam eius nisi dicta accusamus illum enim, quo natus explicabo soluta magni. Recusandae qui corporis fugit tempora placeat accusantium, delectus similique.</p>
+       <p>Omnis veniam reprehenderit dolore maiores labore. Animi aspernatur eveniet culpa explicabo tenetur sint dicta ipsa enim voluptate alias. Vel asperiores consectetur maxime beatae, fuga minus ut temporibus hic ab illum!</p>
+       <p>Voluptatum consequatur a nesciunt animi aspernatur, earum neque officiis perferendis repudiandae est deserunt quaerat tempore unde tempora inventore numquam optio rem. Tenetur sit expedita assumenda soluta modi dicta voluptas eveniet?</p>
+       <p>Placeat corrupti doloribus quaerat dolorum, deserunt dolor iure repellendus tenetur maiores quasi corporis cumque architecto consectetur minus illo dolore tempora. Dolorem doloribus eius numquam placeat, illum sequi fuga vel officia.</p>
+       <p>Quis officia eligendi veniam saepe, eaque quo ipsum veritatis alias accusantium voluptatum explicabo velit dignissimos maxime. Officiis quo incidunt harum ex rerum expedita adipisci, mollitia vitae, aperiam sunt veritatis magnam!</p>
+       <p>Adipisci voluptate sint dignissimos expedita provident doloremque numquam explicabo nobis hic nulla eius ducimus itaque praesentium eaque placeat quidem mollitia soluta recusandae harum nam, architecto labore nemo. Dolore, labore voluptates!</p>
+       <p>Minima, voluptatibus ipsam sunt saepe sint enim id consequuntur aliquam corporis totam maxime, vero vitae consectetur iusto? Qui ipsum consequuntur voluptates perferendis provident maxime facilis, eum quas aliquam facere repellat.</p>
+       <p>Modi rerum error omnis, repellat provident soluta placeat sunt ipsa blanditiis, maiores unde laudantium saepe perspiciatis consequatur officia ab cupiditate aliquam porro quaerat harum, ad expedita illo incidunt illum. Atque?</p>
+       <p>Id reprehenderit placeat asperiores doloremque obcaecati ut optio officiis alias, at amet vel temporibus molestiae fugiat repellat magnam hic quis ex odio commodi? Consequuntur harum, dolorem quas quae veritatis impedit.</p>
+       <p>Quas dolorem rerum in enim voluptates consectetur odit aspernatur, est quo eius nemo aperiam soluta deleniti tenetur recusandae distinctio perferendis quisquam illum delectus cumque maxime illo. Minima unde tenetur eos?</p>
+       <p>Debitis, corrupti sint commodi sed nostrum repellat repellendus perferendis, labore voluptatem vero dignissimos assumenda voluptas iusto placeat velit, aspernatur eveniet. Similique saepe, iure quo cum aliquam eum sed in dolor.</p>
+       <p>Labore nostrum sunt mollitia, eligendi esse fugiat iure iusto. Eos illo animi vitae rem tempore eaque nihil? Nobis voluptate vero delectus tempore impedit laudantium minima optio quae! Laborum, ratione aspernatur.</p>
+       <p>Dolores fuga dolorem obcaecati eligendi temporibus aut nulla maiores. Dignissimos, nobis voluptate ipsa pariatur ipsum sed nam rerum dicta nulla beatae, temporibus veniam officia illo iure provident neque adipisci quis?</p>
+       <p>Molestias dolore suscipit cum quas veniam natus, modi neque amet doloribus perferendis soluta repellat, consectetur sed corporis vitae harum exercitationem fugit doloremque eum. Ipsam voluptatum quibusdam dolorum eveniet dolore ipsa.</p>
+       <p>Doloremque, quidem? Repudiandae eveniet quisquam, soluta harum quo quas veritatis odio provident laudantium ad, sint voluptatem beatae nam iste voluptatum aut praesentium esse. Deserunt distinctio qui odio quod asperiores harum?</p>
+       <p>Sed officia accusantium, fugit omnis hic nisi tempora. Voluptates vitae dolorem, quod quo fugit, tempore temporibus ea ex, beatae doloribus earum esse deserunt reiciendis dignissimos placeat minima eos dicta. Aliquid.</p>
+    
+       <script>
+            const esmaecer = document.querySelector("#esmaecer");
+            // definição variável
+            // Variável constante: não será alterado
+            // Variável recebe o container (div) do esmaecer
+            const fechar = document.querySelector("#fechar");
+            const abrir = document.querySelector("#abrir");
+            fechar.addEventListener('click', function(){
+                // evento de click
+                console.log('CLICOU');
+                // esmaecer.style.display = 'none';
+                esmaecer.style.visibility = 'hidden';
+                // visibility: permite esconder o modal
+            })
+            abrir.addEventListener('click', function(){
+                esmaecer.style.visibility = 'visible';
+            })
+            fechar.addEventListener('mouseover', function(){
+                fechar.style.visibility = 'hidden';
+            })
+            fechar.addEventListener('mouseout', function(){
+                fechar.style.visibility = 'visible';
+            })
+       </script>
+    
+    </body>
+</html>
