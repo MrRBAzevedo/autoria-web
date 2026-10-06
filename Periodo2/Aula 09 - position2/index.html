@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AULA POSITION</title>
         <style>
+            *{ /* * significa selecionar TODOS */
+                margin: 0;
+                padding: 0;
+            }
             div.absolute{
                 width: 15rem;
                 height: 15rem;
@@ -13,15 +17,88 @@
                 opacity: 0.9; /* coloca TUDO com opacidade, vai de 0 a 1 */
                 padding: 2rem;
                 position: absolute;
+                top: 200px; /* Pixels de distância do topo */
+                /* left: 200px; */
+                right: 0;
                 /*
                 - position absolute é diferente do fixed
                 - position absolute vai junto com a barra de rolagem
                 - position fixed fica fixo mesmo com rolando a barra de rolagem
+
+                - Tanto no absolute quando no fixed, o elemento sobrepõe os demais.
+                No entanto, finalizar....
                 */
+            }
+            p {
+                margin: 1rem;
+            }
+            footer {
+                background-color: bisque;
+                width: 100vw; /* vw = viewport widht = largura do dispositivo = 100% */
+                /* porém , para usar largura 100% é necessário tirar o margin */
+
+                padding: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                bottom: 0;
+                /* 
+                top: ;
+                left: ;
+                right: ;
+                bottom: ;
+                - Atributos de coordenadas para serem usados com position
+                - recebem um valor positivo ou negativo
+                - só pode ser definido um ou 2 desses, caso 2, escolher um eixo x e um y
+                */
+
+                z-index: 10;
+                /* 
+                - z-index representa o eixo z
+                - recebe um número inteiro
+                - quanto maior o valor, mais para "frente" o elemento ficará
+                - só é utilizado para elementos com position relative, fixed ou absolute
+                */
+
+
+            }
+            div.relative {
+                position: relative;
+                /* 
+                É usado para colocar um fixes ou absolute "dentro", pois as coordenadas 
+                desses elementos ficarão condicionados ao elemento relativo.
+                */
+                background-color: blue;
+                padding: 2rem;
+                top: 100px;
+            }
+            div.absolute2{
+                background-color: rgb(20, 194, 194);
+                top: 150px;
+                right: 250px;
+            }
+            div.absolute3{
+                background-color: rgb(20, 194, 194);
+                top: 200px;
+                right: 700px;
+                box-shadow: 0.5rem 0.5rem 1rem black;
+                z-index: 11;
             }
         </style>
     </head>
     <body>
+        <div class="relative">
+            <div class="absolute">
+                <p>1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur sunt impedit, nobis veritatis id saepe cum laboriosam eius architecto neque inventore! Esse consectetur enim quos expedita eveniet. Cumque, aspernatur!</p>
+            </div>
+            <div class="absolute absolute2">
+                <p>2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur sunt impedit, nobis veritatis id saepe cum laboriosam eius architecto neque inventore! Esse consectetur enim quos expedita eveniet. Cumque, aspernatur!</p>
+            </div>
+            <div class="absolute absolute3">
+                <p>3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur sunt impedit, nobis veritatis id saepe cum laboriosam eius architecto neque inventore! Esse consectetur enim quos expedita eveniet. Cumque, aspernatur!</p>
+            </div>
+        </div>
         <div class="absolute">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur rem omnis dolores fugit atque fugiat porro dolore similique, officiis distinctio animi eum deleniti sequi molestias cumque provident quia dignissimos!</p>
         </div>
@@ -75,5 +152,9 @@
         <p>Saepe nisi beatae voluptatem voluptas veniam reiciendis numquam porro? Exercitationem voluptates modi expedita nihil pariatur molestiae ea facilis nam, ullam suscipit cupiditate rem in, molestias veritatis fugiat nulla enim aut.</p>
         <p>Nihil autem quisquam voluptatibus dolores! Consectetur, esse ipsum excepturi temporibus, pariatur distinctio aspernatur maxime delectus perspiciatis cupiditate quo sed, ad officia. Aut sequi quo non, necessitatibus veritatis totam atque reiciendis?</p>
         <p>Tempora, dolor laudantium, amet numquam similique voluptatibus porro impedit nesciunt, corrupti esse adipisci nobis quae. Tenetur perferendis corrupti, ut exercitationem veritatis quidem magni, mollitia molestiae iusto quis nostrum illo vitae!</p>
+        <footer>
+            <p>Desenvolvido por IFRN.</p>
+        </footer>
     </body>
 </html>
+

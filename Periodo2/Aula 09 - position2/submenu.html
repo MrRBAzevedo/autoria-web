@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body > ol {
+                /* Aplica apenas no OL que está imediatamente após o BODY */
+                display: flex;
+            }
+            li {
+                list-style-type: none;
+                margin-right: 2rem;
+                position: relative;
+                cursor: pointer;
+            }
+            ol ol {
+                background-color: aquamarine;
+                padding: 2rem;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity 0.5s ease, visibility 0.5s ease;
+            }
+            li:hover ol{
+                opacity: 1;
+                visibility: visible;
+            }
+        </style>
+    </head>
+    <body> <!-- É uma simulação de menu, colocar os âncoras depois... -->
+        <ol>
+            <li>Página inicial</li>
+            <li>Programação
+                <ol>
+                    <li>Palestras</li>
+                    <li>Minicursos</li>
+                </ol> <!-- O LI FECHA DEPOIS DA LISTA INTERNA -->
+            </li>
+            <li>Organização</li>
+            <li>Exposição
+                <ol>
+                    <li>Tecnologia</li>
+                    <li>Empreendedorismo</li>
+                    <li>Projetos</li>
+                </ol>
+            </li>
+            <li>Contato</li>
+        </ol>
+    </body>
+</html>
