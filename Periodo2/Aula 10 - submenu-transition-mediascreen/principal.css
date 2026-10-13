@@ -1,0 +1,68 @@
+*{
+    /* Seletor universal: aplica a formatação a todas as marcações */
+    margin: 0;
+    padding: 0;
+}
+nav > ol{
+    /* 
+    O sinal de maior ">" faz uma seleção do elemento que está imediatamente
+    dentro, isto é, filho. Logo, apenas o OL que é filho do NAV é formatado.
+    */
+    display: flex;
+    /* Coloca os itens do menu um ao lado do outro. */
+}
+ol > li{
+    position: relative;
+    /* É necessário que o item do menu que tem submenu abra o seu respectivo */
+    background-color: cadetblue;
+    list-style-type: none;
+    padding: 2rem;
+}
+ol ul{
+    opacity: 0;
+    /* O submenu ficará totalmente totalmente invisível, por padrão. */
+    /* Outras opções seriam o visibility: hidden; e o display: none ou opacity. */
+    visibility: hidden;
+    /* Deve ter visibility ou display porque o submenu só com opacity continua
+    ocupando espaço. */
+    position: absolute;
+    /* O submenu ficará sobre os elementos. */
+    background-color: black;
+    padding: 2rem;
+    height: 0rem;
+    z-index: 2;
+    /* Para o submenu ficar em cima dos itens, visto que ele é position relative. */
+}
+ul a{
+    color: aliceblue;
+    list-style-type: none;
+}
+ol li:hover ul{
+    /* Efeito mouse hover com CSS:
+    
+    */
+    opacity: 1;
+    visibility: visible;    
+    height: 5rem;
+    transition: height 0.3s ease, opacity 0.3s, background-color 0.3s;
+    /* 
+    - Para funcionar a transição é necessário colocar o valor do
+    atributo de formatação, assim como o tempo de transição em segundos.
+    - Não podemos colocar mais de um atributo 'trasition' neste bloco de formatação.
+    */
+}
+/* REPONSIVIDADE */
+@media screen and (max-width: 1280px) {
+    /* Funciona como um 'if' do CSS. 
+    Nesse caso, SE a resolução do usuário for menor que 1280px,
+    serão aplicadas as formatações abaixo. */
+    body{
+        background-color: aqua;
+    }
+    /* Pode reescrever todo o CSS */
+}
+@media screen and (max-width: 850px) {
+    body{
+        background-color: rgb(234, 255, 0);
+    }
+}
