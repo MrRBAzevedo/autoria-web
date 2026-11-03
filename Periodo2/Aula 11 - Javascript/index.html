@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JAVASCRIPT</title>
+    </head>
+    <body>
+        <h1>JAVASCRIPT</h1>
+        <ul>
+            <li>JAVASCRIPT é uma linguagem de programação FRONT-END e pode fazer requisições BACKEND</li>
+            <li>Diferencia maiúsculas e minúsculas</li>
+            <li>O ";" é opcional</li>
+            <li>Usado para dar comportamento, INTERATIVIDADE</li>
+            <li>Exemplos de uso: modal, janela de mensagem, correção de form, galeria de fotos...</li>
+        </ul>
+        <p id="olamundo">
+
+        </p>
+        <script>
+            // alert("Olá, mundo!");
+            // let minora = window.confirm("Hoje tem aula de Minora?");
+            // document.write("<h2>Tem aula de Minora?</h2>");
+            // if (minora == false) {
+            //     document.write("<h3>Não, como sempre.</h3>");    
+            // } else {
+            //     document.write("<h3>Sim, quase um milagre.</h3>");    
+            // }
+            // // document.write("<p>"+minora+"</p>"); // document.write escreve no HTML
+            // let nome = window.prompt("Qual seu nome?");
+            // document.write("<h1>"+nome+"<h1>");
+
+            // 3 janelas (chatas, não use!) (Essas acima)
+            // alert: é apenas para mensagem
+            // confirm: retorna true ou false
+            // prompt: retorna um texto
+
+            document.write("Olá, mundo com document.write!");
+            console.log("Olá, mundo com console!");
+            document.getElementById("olamundo").innerHTML = "Olá, mundo com GetElementById";
+            /* Com o innerHTML pode se alterar o conteúdo de uma marcação HTML diretamente pelo ID,
+            sendo uma alternativa mais indicada em relação ao document.write. */
+            // Posso colocar textos com marcações, como "<p>Marcação de parágrafo</p>"
+        </script>    
+        <h2>VARIÁVEIS</h2>
+        <script>
+            let num = 5;
+            let numdecimal = 54.87;
+            let curso = "INFOWEB";
+            let booleano = true;
+
+            document.write("<h2>OPERADORES ARITMÉTICOS</h2>");
+            console.log(54 + 98);
+            console.log(54 - 98);
+            console.log(54 * 98);
+            console.log(54 / 98);
+            let a = 87;
+            console.log(++a); // incremento: a + 1
+            // se o "++" for antes, o valor incrementado já é mostrado, caso contrário, é mostrado em seguida;
+            // também há o decremento "--"
+        </script>
+        <label>NUM1: <input type="text" id="num1"></label>
+        <label>NUM2: <input type="text" id="num2"></label>
+        <button id="somar">SOMAR</button>
+        <p id="resultado"></p>
+        <script>
+            const somar = document.querySelector("#somar"); // diferente do GetElementById
+            // é necessário colocar o "#"
+            somar.addEventListener("mouseover", function(e){ // evento de click
+                let num1 = document.querySelector("#num1").value;
+                // .value apenas pega o valor lido pelo input
+                let num2 = document.querySelector("#num2").value;
+                document.getElementById("resultado").innerHTML = parseInt(num1) + parseInt(num2);
+            });
+            // A função de parseInt converte o valor do input text em inteiro
+
+
+        </script>
+    </body>
+</html>
