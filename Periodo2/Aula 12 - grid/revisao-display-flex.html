@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DISPLAY GRID</title>
+        <style>
+            body>div {
+                border: 1px solid black;
+                max-width: 70rem; /* max-width é para a responsividade */
+                margin: 0 auto; /* é possível centralizar com flex ou com width e margin auto... */
+                display: flex;
+                gap: 2rem; /* espaçamento entre os cards */
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 2rem; /* espaçamento interno */
+            }
+            div>div {
+                border: 1px solid gray;
+                padding: 2rem;
+                width: 40%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, adipisci veritatis error sed, architecto aspernatur hic porro corrupti nihil in inventore. Sequi illo enim quis labore sapiente possimus, magnam commodi!</p>
+            </div>
+            <div>
+                <p>Cumque aperiam provident recusandae sequi eum magni ullam ipsam eaque aspernatur beatae? Voluptas vero nemo, sequi minima, commodi illum ratione ex ut, repudiandae nam itaque adipisci fuga repellat quaerat incidunt!</p>
+            </div>
+            <div>
+                <p>Expedita vero dolor vitae fugiat aliquam cum accusantium, incidunt est labore laborum tenetur, aperiam corrupti ullam repellat saepe sed. Ipsum eius sunt saepe similique quisquam quia repellendus, repellat a nam?</p>
+            </div>
+            <div>
+                <p>Exercitationem maxime aliquam similique quidem, beatae error itaque aperiam doloribus. Dolor harum mollitia assumenda ea velit iste, dolores aperiam amet vel, quidem aspernatur magnam non eum quam ad dolore impedit?</p>
+            </div>
+        </div>
+    </body>
+</html>

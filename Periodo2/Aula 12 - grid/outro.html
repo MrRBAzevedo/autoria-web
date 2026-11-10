@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DISPLAY GRID</title>
+        <style>
+            body>div {
+                border: 1px solid black;
+                max-width: 70rem; /* max-width é para a responsividade */
+                margin: 0 auto; /* é possível centralizar com flex ou com width e margin auto... */
+                gap: 2rem; /* espaçamento entre os cards */
+                justify-content: center;
+                padding: 2rem; /* espaçamento interno */
+                display: grid; /* display grid permite diagramação com cards mesclados verticalmente */
+                grid-template-areas:
+                "a b c"
+                "a b d"
+                "e e e"
+                ;
+                /* o "." representa um espaço vazio */
+                /* as áreas não podem ficar distantes, nem em formato de "L" ou não aparecer */
+                grid-template-columns: 1fr 2fr 1fr; 
+                /* Define a largura de cada colunam, recebe os valores de largura das colunas,
+                se forem definidas 3 colunas, devem ser definidos três valores... e assim
+                sucessivamente. 
+                Unidades: rem, em, %, fr (fracionado) */
+                grid-template-rows: 1fr 1fr 1fr;
+                /* Ver o atributo de overflow!!!!!!!!!!!!!! */
+            }
+            div>div {
+                border: 1px solid gray;
+                padding: 2rem;
+            }
+            .palestras {
+                grid-area: a;
+            }
+            .palestrantes {
+                grid-area: b;
+            }
+            .minicursos {
+                grid-area: c;
+            }
+            .exposicoes {
+                grid-area: d;
+            }
+            .locais {
+                grid-area: e;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="palestras">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, adipisci veritatis error sed, architecto aspernatur hic porro corrupti nihil in inventore. Sequi illo enim quis labore sapiente possimus, magnam commodi!</p>
+            </div>
+            <div class="palestrantes">
+                <p>Cumque aperiam provident recusandae sequi eum magni ullam ipsam eaque aspernatur beatae? Voluptas vero nemo, sequi minima, commodi illum ratione ex ut, repudiandae nam itaque adipisci fuga repellat quaerat incidunt!</p>
+            </div>
+            <div class="minicursos">
+                <p>Expedita vero dolor vitae fugiat aliquam cum accusantium, incidunt est labore laborum tenetur, aperiam corrupti ullam repellat saepe sed. Ipsum eius sunt saepe similique quisquam quia repellendus, repellat a nam?</p>
+            </div>
+            <div class="exposicoes">
+                <p>Exercitationem maxime aliquam similique quidem, beatae error itaque aperiam doloribus. Dolor harum mollitia assumenda ea velit iste, dolores aperiam amet vel, quidem aspernatur magnam non eum quam ad dolore impedit?</p>
+            </div>
+            <div class="locais">
+                <p>Exercitationem maxime aliquam similique quidem, beatae error itaque aperiam doloribus. Dolor harum mollitia assumenda ea velit iste, dolores aperiam amet vel, quidem aspernatur magnam non eum quam ad dolore impedit?</p>
+            </div>
+        </div>
+    </body>
+</html>
