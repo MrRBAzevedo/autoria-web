@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anotações Display Grid</title>
+        <style>
+            #container {
+                margin: 0 auto;
+                border: 1px solid black;
+                padding: 2rem;
+                max-width: 50rem;
+                justify-content: center;
+                gap: 2rem;
+                display: grid;
+                /* O "display: grid;" permite a organização do display como uma tabela,
+                possibilitando a mesclagem e o ajuste do tamanho de suas células. 
+                   Essas células nada mais são que os elementos filhos daquele que possuir
+                o atributo display com o valor grid. */
+
+                grid-template-areas: 
+                "a a b"
+                "c c b"
+                "d e e"
+                ;
+                /* O grid-templete-areas recebe uma matriz que representa como as células
+                se organizarão no display. Os valores dessa matriz são aqueles atribuídos
+                a cada elemento-filho.  */
+
+                grid-template-columns: 1fr 2fr 1fr;
+                /* Caso se deseje alterar o tamanho das colunas, pode-se utilizar o 
+                grid-template-columns, que receberá um valor para cada uma das colunas. 
+                   Geralmente, utiliza-se unidades como porcentagem ou fração (fr) para
+                realizar esses ajustes. */
+
+                grid-template-rows: 1fr 1fr 1fr;
+                /* Assemelha-se ao grid-template-rows, mas, ao invés de colunas, permite
+                alterar o tamanho das linhas. */
+            }
+            #container div {
+                padding: 6rem;
+            }
+            #azul {
+                background-color: blue;
+                grid-area: a;
+                /* Para que seja possível trabalhar com o display grid, é necessário
+                atribuir um nome a cada uma de suas células, o que pode ser feito
+                com grid-area: nome. É imprescindível que os nomes não se repitam. */
+            }
+            #verde {
+                background-color: green;
+                grid-area: b;
+            }
+            #amarelo {
+                background-color: yellow;
+                grid-area: c;
+            }
+            #vermelho {
+                background-color: red;
+                grid-area: d;
+            }
+            #laranja {
+                background-color: orange;
+                grid-area: e;
+            }
+            #over {
+                margin: 2rem auto;
+                width: 10rem;
+                height: 5rem;
+                padding: 2rem;
+                border: 1px solid black;
+                overflow-y: scroll;
+                /* Quando um elemento for muito grande para seu container, passando de suas
+                bordas, pode-se utilizar o atributo overflow, responsável por adicionar uma
+                barra de rolagem, tanto vertical quanto horizontal. */
+            }
+            </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="azul"></div>
+            <div id="verde"></div>
+            <div id="amarelo"></div>
+            <div id="vermelho"></div>
+            <div id="laranja"></div>
+        </div>
+        <div id="over">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nostrum praesentium veniam aperiam, ab rem rerum. Perspiciatis fuga magnam incidunt ipsam, dicta eum repellat iure veritatis! Aliquid laudantium modi accusantium.
+        </div>
+    </body>
+</html>

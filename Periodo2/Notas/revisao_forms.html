@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Revisão de formulários</title>
+    </head>
+    <body>
+        <form action="">
+            <!-- Form é a marcação que delimita o formulário. Nela, pode ser posto
+            o atributo action, que guarda o endereço da página para qual o usuário 
+            será redirecionado ao enviar o formulário. -->
+            
+            <label for="nome"></label>
+            <!-- Label é a marcação utilizada para atribuir um rótulo a uma
+            marcação de input, textarea ou selection. Essa atribuição pode
+            ocorrer por meio de uma relação pai-filho, em que a marcação de
+            entrada é posta dentro da label, ou a partir do atributo for,
+            que recebe o ID da marcação rotulada. -->
+
+            <input type="text" id="nome">
+            <!-- Input é a marcação de entrada do HTML. Ela possui diferentes
+            tipos, que podem ser alternados a partir do atributo type. Dentre
+            eles, podemos destacar:
+                -> text: textos curtos
+                -> radio: escolha única
+                -> checkbox: múltipla escolha
+                -> date: data
+                -> file: arquivos
+                -> submit: botão de enviar o formulário
+            -->
+            
+            <fieldset>
+                <!-- É como uma marcação de section para o formulário, pois
+                permite dividí-lo em seções. -->
+
+                <legend>
+                    <!-- A marcação de legend sempre acompanha a de fieldset, pois é
+                    utilizada para lhe dar um título. -->
+                    radio, checkbox, select, datalist
+                </legend>
+
+                <!-- RADIO -->
+                <label><input type="radio" name="grupo" id="opcao1" value="opcao1"> Opção 01</label>
+                <label><input type="radio" name="grupo" id="opcao2" value="opcao2"> Opção 02</label>
+                <label><input type="radio" name="grupo" id="opcao3" value="opcao3" checked> Opção 03</label>
+                <label><input type="radio" name="grupo" id="opcao4" value="opcao4"> Opção 04</label>
+                <label><input type="radio" name="grupo" id="opcao5" value="opcao5"> Opção 05</label>
+                <!-- Ao utilizar o input do tipo radio, é necessário pôr o atributo name
+                com o mesmo valor para todos, pois isso fará com que sejam interpretados
+                como um grupo. 
+                     Aqui, o atributo checked pode ser utilizado para definir qual opção
+                será selecionada por padrão. -->
+                
+                <br>
+                <!-- CHECKBOX -->
+                <label><input type="checkbox" name="grupo" id="opcao1" value="opcao1"> Opção 01</label>
+                <label><input type="checkbox" name="grupo" id="opcao2" value="opcao2"> Opção 02</label>
+                <label><input type="checkbox" name="grupo" id="opcao3" value="opcao3" checked> Opção 03</label>
+                <label><input type="checkbox" name="grupo" id="opcao4" value="opcao4"> Opção 04</label>
+                <label><input type="checkbox" name="grupo" id="opcao5" value="opcao5"> Opção 05</label>
+
+                <br>
+                <!-- SELECT/OPTION -->
+                <select id="select">
+                    <option value="opcao1">Opção 1</option>
+                    <option value="opcao2">Opção 2</option>
+                    <option value="opcao3" selected>Opção 3</option>
+                    <option value="opcao4">Opção 4</option>
+                    <option value="opcao5">Opção 5</option>
+                </select>
+                <!-- Semelhante ao checked, o atributo selected pode ser utilizado para definir uma
+                opção selecionada por padrão. -->
+
+                <br>
+                <!-- DATALIST -->
+                <input type="text" placeholder="UF" list="estados">
+                <datalist id="estados">
+                    <option value="AC"></option>
+                    <option value="AL"></option>
+                    <option value="AP"></option>
+                    <option value="AM"></option>
+                    <option value="AB"></option>
+                    <option value="CE"></option>
+                    <option value="ES"></option>
+                    <option value="GO"></option>
+                    <option value="DF"></option>
+                    <option value="MA"></option>
+                    <option value="MT"></option>
+                    <option value="MS"></option>
+                    <option value="MG"></option>
+                    <option value="PA"></option>
+                    <option value="PB"></option>
+                    <option value="PR"></option>
+                    <option value="PE"></option>
+                    <option value="PI"></option>
+                    <option value="RJ"></option>
+                    <option value="RN"></option>
+                    <option value="RS"></option>
+                    <option value="RO"></option>
+                    <option value="RS"></option>
+                    <option value="SC"></option>
+                    <option value="SP"></option>
+                    <option value="SE"></option>
+                    <option value="TO"></option>
+                </datalist>
+                <!-- O datalist funciona como um selected atrelado a um input. 
+                Uma diferença interessante do select para o datalist é que, no
+                primeiro, o atrbiuto de value fica ocultado, mas é exibido no
+                segundo.
+                -->
+
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Textarea
+                </legend>
+                
+                <label for="Textarea">Tome: </label>
+                <textarea id="Textarea" placeholder="Reposta: é o value.">Esse texto é o value ou o placeholder?</textarea>
+            </fieldset>
+        </form>
+    </body>
+</html>

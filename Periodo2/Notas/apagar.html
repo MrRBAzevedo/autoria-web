@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício de Display Grid</title>
+        <style>
+            *{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            #caixa {
+                background-color: gray;
+                border: 1px solid black;
+                max-width: 100rem;
+                padding: 2rem;
+                margin: 0 auto;
+                gap: 2rem;
+                display: grid;
+                grid-template-areas: 
+                "a a a c c"
+                "a a a d d"
+                "b b b b b"
+                "e f g h i"
+                ;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            }
+            #caixa div {
+                border: 1px solid black;
+                padding: 4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #caixa div div {
+                height: 0.1rem;
+                width: 0.1rem;
+                border: 1px solid black;
+                background-color: rgb(255, 255, 255);
+                transform: rotate(45deg);
+            }
+            p{
+                transform: rotate(-45deg);
+                font-size: 2rem;
+            }
+            #num1{
+                background-image: linear-gradient(to right, #e493fa, #fa7ef6);
+                grid-area: a;
+            }
+            #num2{
+                background-image: linear-gradient(to right, #e493fa, #fa7ef6);
+                grid-area: b;
+            }
+            #num3{
+                background-image: linear-gradient(to right, #e493fa, #fa7ef6);
+                grid-area: c;
+            }
+            #num4{
+                background-image: linear-gradient(to right, #e493fa, #fa7ef6);
+                grid-area: d;
+            }
+            #num5{
+                background-image: linear-gradient(to right, #e493fa, #fa7ef6);
+                grid-area: e;
+            }
+            #num6{
+                background-image: linear-gradient(to right, #e493fa, #fa7ef6);
+                grid-area: f;
+            }
+            #num7{
+                background-image: linear-gradient(to right, #e493fa, #fa7ef6);
+                grid-area: g;
+            }
+            #num8{
+                background-image: linear-gradient(to right, #e493fa, #fa7ef6);
+                grid-area: h;
+            }
+            #num9{
+                background-image: linear-gradient(to right, #e493fa, #fa7ef6);
+                grid-area: i;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="caixa">
+            <div id="num1">
+                <div><p>1</p></div>
+            </div>
+            <div id="num2">
+                <div><p>2</p></div>
+            </div>
+            <div id="num3">
+                <div><p>3</p></div>
+            </div>
+            <div id="num4">
+                <div><p>4</p></div>
+            </div>
+            <div id="num5">
+                <div><p>5</p></div>
+            </div>
+            <div id="num6">
+                <div><p>6</p></div>
+            </div>
+            <div id="num7">
+                <div><p>7</p></div>
+            </div>
+            <div id="num8">
+                <div><p>8</p></div>
+            </div>
+            <div id="num9">
+                <div><p>9</p></div>
+            </div>
+        </div>
+    </body>
+</html>
