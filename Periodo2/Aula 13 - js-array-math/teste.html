@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste</title>
+    </head>
+    <body>
+        <label>Valor a ser arredondado: <input type="text" id="valor"></label>
+        <button id="enviar">Enviar</button>
+        <p id="resultado"></p>
+
+        <script>
+            let enviar = document.getElementById("enviar");
+            let resultado = document.getElementById("resultado");
+            enviar.addEventListener("click", function(e){
+                let valor = document.getElementById("valor").value;
+                valor = Math.round(parseFloat(valor));
+                resultado.innerHTML = valor;
+            });
+        </script>
+    </body>
+</html>

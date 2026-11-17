@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array e Math</title>
+    </head>
+    <body>
+        <h1>Array e Math</h1>
+        <h2>Array</h2>
+        <script>
+            //
+            let alunos = ["Ravi", "Victor", "Aline", "Lara"];
+            console.log(alunos[0]);
+            console.log(`Como imprimir um item da lista: ${alunos[1]}`); // O `` funciona como o f string
+            console.log("Como imprimir um item da lista: " + alunos[1]);
+
+            console.log(`Lista como string ${alunos.toString()}`);
+            // Concatena todos os valores da lista, separados por vírgulas, e os imprime como uma única string
+
+            console.log(`Comprimento da lista: ${alunos.length}`);
+            // Retorna o tamanho do array, isto é, seu número de elementos
+            // .length não é uma função, mas um atributo de array. Por isso, não utiliza parênteses.
+
+            console.log(`O último item: ${alunos[alunos.length - 1]}`);
+            // Utilizar ".length - 1" para encontrar a posição do último elemento de um array
+
+            console.log(`Ordenação: ${alunos.sort()}`);
+            // Método para ordenação da lista
+
+            console.log(`Adiciona o item ${alunos.push("Letícia")}`);
+            // .push() adiciona um elemento ao final da lista, além de retornar o tamanho da lista
+
+            console.log(`Lista como string: ${alunos.toString()}`);
+
+            alunos.pop()
+            // .pop() remove o último elemento da lista
+
+            console.log(`Lista com join: ${alunos.join(" - ")}`);
+            // .join(" valor ") permite exibir os elementos da lista separados por um valor específico.
+
+            alunos.splice(0, 1);
+            /* .splice(x, y) é utilizado para remover elementos da lista. Recebe dois parâmetros: 
+                    x: o índice do primeiro elemento a ser excluído (continua-se para a direita)
+                    y: a quantidade de elementos que se deseja remover
+            */
+           
+            console.log(`Nova lista: ${alunos.join(" | ")}`);
+            alunos.splice(0, 1);
+            alunos.splice(1, 1);
+            console.log(`Nova lista: ${alunos.join(" | ")}`);
+        </script>
+        <h2>Math</h2>
+        <script>
+            console.log(Math.round(5.6));
+            // Recebe um valor e o retorna arredondado
+            // .ceil() arrendonda sempre para cima
+            // .floor() arrendonda sempre para baixo
+
+            console.log(Math.max(7, 8, 9, 4));
+            // Retorna o maior número
+            // .min retona o menor
+
+            let numero = Math.random();
+            numero = numero * 10;
+            numero = Math.ceil(numero);
+            console.log(numero);
+            
+            console.log(Math.random())
+            // Retorna um número pseudo-randômico entre 0 e 1
+        </script>
+        <label>Nome: <input type="text" id="nome"></label>
+        <button id="gerar">GERAR</button>
+        <p id="resultado"></p>
+        <script>
+            const gerar = document.querySelector("#gerar");
+            const resultado = document.getElementById("resultado");
+            gerar.addEventListener("click", function(e){
+                const nomed = document.getElementById("nome");
+                let cores = ["blue", "pink", "yellow", "red"];
+                resultado.style.color = cores[Math.floor(Math.random() * 4)];
+                resultado.style.fontSize = `${Math.ceil(Math.random() * 10)}rem`;
+                resultado.innerHTML = nomed.value;
+            })
+        </script>
+    </body>
+</html>
