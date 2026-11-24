@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            body {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                position: relative;
+            }
+            #formulario {
+                background-color: rgb(115, 191, 194);
+                margin: 0 auto;
+                padding: 2rem;
+                border-radius: 1rem;
+                max-width: 50rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                box-shadow: 0.05rem 0.05rem 0.8rem black;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+            form label {
+                font-size: 1.1rem;
+            }
+            form input {
+                border: none;
+                border-radius: 0.5rem;
+                font-size: 1rem;
+                padding: 0 0.5rem;
+                background-color: rgb(155, 234, 236);
+                height: 2rem;
+            }
+            #enviar {
+                width: 10rem;
+                margin: 0 auto;
+            }
+            button:hover {
+                background-color: rgb(144, 218, 219);
+            }
+            #botoes {
+                position: fixed;
+                top: 20px;
+                right: 30px;
+                display: flex;
+                gap: 2rem;
+            }
+            button {
+                background-color: rgb(155, 234, 236);
+                padding: 0.7rem 1rem;
+                border: none;
+                border-radius: 0.5rem;
+                font-size: 1rem;
+                transition: background-color 0.5s ease;
+            }
+            #resultado {
+                display: none;
+                margin: 0 auto;
+                max-width: 20rem;
+                font-size: 1.4rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="formulario">
+            <form action="">
+                <label>Usuário: <input type="text" id="usuario"></label>
+                <label>Senha: <input type="password" id="senha1"></label>
+                <label>Confirmar senha: <input type="password" id="senha2"></label>
+            </form>
+            <p id="resultado"></p>
+            <button id="enviar">Cadastrar</button>
+        </div>
+        <div id="botoes">
+            <button id="aumentar">Aumentar</button>
+            <button id="diminuir">Diminuir</button>
+            <button id="mudarCor">Boa sorte</button>
+        </div>
+        <script>
+            let resultado = document.getElementById("resultado");
+            let enviar = document.getElementById("enviar");
+            let aumentar = document.getElementById("aumentar");
+            let diminuir = document.getElementById("diminuir");
+            let mudarCor = document.getElementById("mudarCor");
+
+            enviar.addEventListener("click", function(e){
+                let senha1 = document.getElementById("senha1").value;
+                let senha2 = document.getElementById("senha2").value;
+                resultado.style.display = "block";
+
+                if (senha1 == senha2) {
+                    console.log("Senhas iguais!");
+                    resultado.innerHTML = "As senhas são iguais!";
+
+                } else {
+                    console.log("Senhas diferentes!");
+                    resultado.innerHTML = "As senhas são diferentes!";
+                }
+            })
+
+            const cores = ["white", "yellow", "blue", "red", "green", "brown"];
+            mudarCor.addEventListener("click", function(e){
+                let cor = Math.floor(Math.random() * 7);
+                document.body.style.backgroundColor = cores[cor];
+
+            })
+
+        </script>
+    </body>
+</html>

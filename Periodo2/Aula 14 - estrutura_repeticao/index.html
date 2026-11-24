@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+
+        <script>
+            for (let i = 0; i < 10; i++) {
+                // Incremento: i++ / i += 1 / i = i + 1
+                // Pode ser ++i (incrementa antes) ou i++ (incrementa depois)
+                console.log(`For com incremento: ${i}`);
+            }
+
+            for (let i = 10; i > 0; i--) {
+                console.log(`For com decremento: ${i}`);
+            }
+
+            const frutas = ["banana", "morango", "goiaba"];
+            frutas.forEach(f => {
+                console.log(`Foreach: ${f}`);
+            })
+            /* O .forEach permite percorrer todos os elementos da lista, semelhante ao que se
+            faz no Python. */
+
+            for (let i = 0; i < frutas.length; i++) {
+                console.log(`For: ${frutas[i]}`);
+            }
+
+            let j = 0;
+            while (j < 10) {
+                console.log(`While: ${j}`);
+                j++;
+            }
+        </script>
+        <div id="resultado"></div>
+        <script>
+            let resultado = document.getElementById("resultado");
+            for (let i = 1; i < 7; i++) {
+                resultado.innerHTML += `<p style="font-size: ${i}rem;">INFOWEB<p>`;
+                // "+=" é para pegar o valor anterior e adicionar o novo.
+                resultado.style.color = "red";
+            }
+        </script>
+    </body>
+</html>
